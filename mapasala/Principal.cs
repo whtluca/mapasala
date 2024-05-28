@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mapasala.Formularios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -45,6 +46,13 @@ namespace mapasala
         private void Principal_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void salasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            frmSalas s = new frmSalas();
+            s.ShowDialog();
         }
     }
 }

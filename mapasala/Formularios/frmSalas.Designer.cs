@@ -29,29 +29,29 @@ namespace mapasala.Formularios
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtNomeSala = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.chkLab = new System.Windows.Forms.CheckBox();
+            this.chkDisponivel = new System.Windows.Forms.CheckBox();
+            this.btnSalvar = new System.Windows.Forms.Button();
+            this.numCadeiras = new System.Windows.Forms.NumericUpDown();
+            this.numCumputadores = new System.Windows.Forms.NumericUpDown();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCadeiras)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCumputadores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtId
             // 
-            this.textBox1.Location = new System.Drawing.Point(108, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(37, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtId.Location = new System.Drawing.Point(107, 36);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(37, 20);
+            this.txtId.TabIndex = 0;
             // 
             // label1
             // 
@@ -75,70 +75,70 @@ namespace mapasala.Formularios
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(241, 17);
+            this.label3.Location = new System.Drawing.Point(235, 18);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "N° Computadores";
             // 
-            // textBox4
+            // txtNomeSala
             // 
-            this.textBox4.Location = new System.Drawing.Point(337, 33);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 6;
+            this.txtNomeSala.Location = new System.Drawing.Point(150, 36);
+            this.txtNomeSala.Name = "txtNomeSala";
+            this.txtNomeSala.Size = new System.Drawing.Size(82, 20);
+            this.txtNomeSala.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(334, 17);
+            this.label4.Location = new System.Drawing.Point(328, 18);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 13);
             this.label4.TabIndex = 7;
             this.label4.Text = "N° Cadeiras";
             // 
-            // checkBox1
+            // chkLab
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(443, 35);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(85, 17);
-            this.checkBox1.TabIndex = 8;
-            this.checkBox1.Text = "Laoboratório";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkLab.AutoSize = true;
+            this.chkLab.Location = new System.Drawing.Point(437, 36);
+            this.chkLab.Name = "chkLab";
+            this.chkLab.Size = new System.Drawing.Size(85, 17);
+            this.chkLab.TabIndex = 8;
+            this.chkLab.Text = "Laoboratório";
+            this.chkLab.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // chkDisponivel
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(529, 35);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(75, 17);
-            this.checkBox2.TabIndex = 9;
-            this.checkBox2.Text = "Disponivel";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chkDisponivel.AutoSize = true;
+            this.chkDisponivel.Location = new System.Drawing.Point(523, 36);
+            this.chkDisponivel.Name = "chkDisponivel";
+            this.chkDisponivel.Size = new System.Drawing.Size(75, 17);
+            this.chkDisponivel.TabIndex = 9;
+            this.chkDisponivel.Text = "Disponivel";
+            this.chkDisponivel.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnSalvar
             // 
-            this.button1.Location = new System.Drawing.Point(610, 29);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Salvar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSalvar.Location = new System.Drawing.Point(604, 30);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(75, 23);
+            this.btnSalvar.TabIndex = 10;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown1
+            // numCadeiras
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(151, 35);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(87, 20);
-            this.numericUpDown1.TabIndex = 11;
+            this.numCadeiras.Location = new System.Drawing.Point(331, 35);
+            this.numCadeiras.Name = "numCadeiras";
+            this.numCadeiras.Size = new System.Drawing.Size(87, 20);
+            this.numCadeiras.TabIndex = 11;
             // 
-            // numericUpDown2
+            // numCumputadores
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(244, 35);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(87, 20);
-            this.numericUpDown2.TabIndex = 12;
+            this.numCumputadores.Location = new System.Drawing.Point(238, 36);
+            this.numCumputadores.Name = "numCumputadores";
+            this.numCumputadores.Size = new System.Drawing.Size(87, 20);
+            this.numCumputadores.TabIndex = 12;
             // 
             // dataGridView1
             // 
@@ -154,21 +154,22 @@ namespace mapasala.Formularios
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.numCumputadores);
+            this.Controls.Add(this.numCadeiras);
+            this.Controls.Add(this.btnSalvar);
+            this.Controls.Add(this.chkDisponivel);
+            this.Controls.Add(this.chkLab);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtNomeSala);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtId);
             this.Name = "frmSalas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSalas";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCadeiras)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCumputadores)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -177,17 +178,17 @@ namespace mapasala.Formularios
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtNomeSala;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.CheckBox chkLab;
+        private System.Windows.Forms.CheckBox chkDisponivel;
+        private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.NumericUpDown numCadeiras;
+        private System.Windows.Forms.NumericUpDown numCumputadores;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
