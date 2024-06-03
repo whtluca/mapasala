@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace model.Entidade
 {
-    public class ProfessoresEntidade
+    public class DiciplinasEntidade
     {
         public int Id { get; set; }
         public string Nome { get; set; }
-        public string Apelido { get; set; }
+        public string Sigla { get; set; }
         public bool Ativo { get; set; }
-
     }
 }

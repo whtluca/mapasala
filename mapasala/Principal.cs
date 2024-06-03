@@ -54,5 +54,11 @@ namespace mapasala
             frmSalas s = new frmSalas();
             s.ShowDialog();
         }
+
+        private void disciplinasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDiciplinas d = new frmDiciplinas();
+            d.ShowDialog();
+        }
     }
 }
