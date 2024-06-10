@@ -36,5 +36,10 @@ namespace mapasala.Formularios
 
             dados.Add(diciplinas);
         }
+
+        private void dtgridDiciplinas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

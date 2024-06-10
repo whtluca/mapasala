@@ -116,6 +116,7 @@ namespace mapasala.Formularios
             this.dtgridDiciplinas.Name = "dtgridDiciplinas";
             this.dtgridDiciplinas.Size = new System.Drawing.Size(750, 220);
             this.dtgridDiciplinas.TabIndex = 8;
+            this.dtgridDiciplinas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgridDiciplinas_CellContentClick);
             // 
             // frmDiciplinas
             // 

@@ -34,10 +34,17 @@ namespace mapasala.Formularios
         private void bntSalvar_Click(object sender, EventArgs e)
         {
             ProfessoresEntidade professor = new ProfessoresEntidade();
-            professor.Id = Convert.ToInt32(txtId.Text);
+            professor.Id = Convert.ToInt32(numId.Value);
             professor.Nome = txtNome.Text;
             professor.Apelido = txtApelido.Text;
-           
+            professor.Ativo = chkAtivo.Checked;
+
+            dados.Add(professor);
+        }
+
+        private void dtgridProfs_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
