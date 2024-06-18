@@ -13,11 +13,21 @@ namespace mapasala.Formularios
 {
     public partial class frmSalas : Form
     {
-        BindingSource dados;
+        DataTable dados;
+        int LinhaSelecionada;
         public frmSalas()
         {
             InitializeComponent();
-            dados = new BindingSource();
+            dados = new DataTable();
+
+            foreach (var atributos in typeof(CursoEntidades).GetProperties())
+            {
+                dados.Columns.Add(atributos.Name);
+            }
+            dados.Rows.Add(1, "Matematica", "MAT", true);
+            dados.Rows.Add(2, "Português", "PORT", true);
+            dados.Rows.Add(3, "Física", "FIS", false);
+
             dtgridSalas.DataSource = dados;
         }
 
@@ -37,7 +47,20 @@ namespace mapasala.Formularios
             salas.NumComputadores = Convert.ToInt32(numCumputadores.Value);
             salas.Disponivel = chkDisponivel.Checked;
 
-            dados.Add(salas);
+            dados.Rows.Add(d.Linha());
+
+            LimparCampos();
         }
-    }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LimparCampos();
+        }
+        private void LimparCampos()
+        {
+            txtId
+            txtNomeDisciplina.Text = "";
+            txtSigla.Text = "";
+        }
 }
+    parei aqui

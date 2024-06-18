@@ -13,11 +13,22 @@ namespace mapasala.Formularios
 {
     public partial class frmProfessores : Form
     {
-        BindingSource dados;
+        DataTable dados;
+        int LinhaSelecionada;
         public frmProfessores()
         {
             InitializeComponent();
-            dados = new BindingSource();
+            dados = new DataTable();
+
+            foreach (var atributos in typeof(ProfessoresEntidade).GetProperties())
+            {
+                dados.Columns.Add(atributos.Name);
+            }
+
+            dados.Rows.Add(1, "Alexandre", "galvani", true);
+            dados.Rows.Add(2, "Elisio", "Elisio", true);
+            dados.Rows.Add(3, "Eliete", "Eliete", false);
+
             dtgridProfs.DataSource = dados;
         }
 
@@ -39,12 +50,45 @@ namespace mapasala.Formularios
             professor.Apelido = txtApelido.Text;
             professor.Ativo = chkAtivo.Checked;
 
-            dados.Add(professor);
+            dados.Rows.Add(professor.Linha());
+
+            LimparCampos();
         }
 
         private void dtgridProfs_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
+
+        private void dtgridProfs_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            LinhaSelecionada = e.RowIndex;
+            txtNome.Text = dtgridProfs.Rows[LinhaSelecionada].Cells[1].Value.ToString();
+            txtApelido.Text = dtgridProfs.Rows[LinhaSelecionada].Cells[2].Value.ToString();
+            numId.Value = Convert.ToInt32(dtgridProfs.Rows[LinhaSelecionada].Cells[0].Value)
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            LimparCampos();
+        }
+        private void LimparCampos()
+        {
+            numId.Value = 0;
+            txtNome.Text = "";
+            txtApelido.Text = "";
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            dtgridProfs.Rows.RemoveAt(LinhaSelecionada);
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow meupai = dtgridProfs.Rows[LinhaSelecionada];
+            meupai.Cells[0].Value = numId.Value;
+            meupai.Cells[1].Value = txtNome.Text;
+            meupai.Cells[2].Value = txtApelido.Text;
+        }
     }
-}

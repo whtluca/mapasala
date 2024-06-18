@@ -41,6 +41,9 @@ namespace mapasala.Formularios
             this.txtNumCadeira = new System.Windows.Forms.NumericUpDown();
             this.numCumputadores = new System.Windows.Forms.NumericUpDown();
             this.dtgridSalas = new System.Windows.Forms.DataGridView();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.txtNumCadeira)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCumputadores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgridSalas)).BeginInit();
@@ -48,7 +51,7 @@ namespace mapasala.Formularios
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(107, 36);
+            this.txtId.Location = new System.Drawing.Point(4, 27);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(37, 20);
             this.txtId.TabIndex = 0;
@@ -56,7 +59,7 @@ namespace mapasala.Formularios
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(105, 19);
+            this.label1.Location = new System.Drawing.Point(2, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(16, 13);
             this.label1.TabIndex = 3;
@@ -66,7 +69,7 @@ namespace mapasala.Formularios
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(148, 17);
+            this.label2.Location = new System.Drawing.Point(45, 8);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 13);
             this.label2.TabIndex = 4;
@@ -75,7 +78,7 @@ namespace mapasala.Formularios
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(235, 18);
+            this.label3.Location = new System.Drawing.Point(132, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 13);
             this.label3.TabIndex = 5;
@@ -83,7 +86,7 @@ namespace mapasala.Formularios
             // 
             // txtNomeSala
             // 
-            this.txtNomeSala.Location = new System.Drawing.Point(150, 36);
+            this.txtNomeSala.Location = new System.Drawing.Point(47, 27);
             this.txtNomeSala.Name = "txtNomeSala";
             this.txtNomeSala.Size = new System.Drawing.Size(82, 20);
             this.txtNomeSala.TabIndex = 6;
@@ -91,7 +94,7 @@ namespace mapasala.Formularios
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(328, 18);
+            this.label4.Location = new System.Drawing.Point(225, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 13);
             this.label4.TabIndex = 7;
@@ -100,7 +103,7 @@ namespace mapasala.Formularios
             // chkLab
             // 
             this.chkLab.AutoSize = true;
-            this.chkLab.Location = new System.Drawing.Point(437, 36);
+            this.chkLab.Location = new System.Drawing.Point(334, 27);
             this.chkLab.Name = "chkLab";
             this.chkLab.Size = new System.Drawing.Size(85, 17);
             this.chkLab.TabIndex = 8;
@@ -110,7 +113,7 @@ namespace mapasala.Formularios
             // chkDisponivel
             // 
             this.chkDisponivel.AutoSize = true;
-            this.chkDisponivel.Location = new System.Drawing.Point(523, 36);
+            this.chkDisponivel.Location = new System.Drawing.Point(420, 27);
             this.chkDisponivel.Name = "chkDisponivel";
             this.chkDisponivel.Size = new System.Drawing.Size(75, 17);
             this.chkDisponivel.TabIndex = 9;
@@ -119,7 +122,7 @@ namespace mapasala.Formularios
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(604, 30);
+            this.btnSalvar.Location = new System.Drawing.Point(501, 21);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 10;
@@ -129,14 +132,14 @@ namespace mapasala.Formularios
             // 
             // txtNumCadeira
             // 
-            this.txtNumCadeira.Location = new System.Drawing.Point(331, 35);
+            this.txtNumCadeira.Location = new System.Drawing.Point(228, 26);
             this.txtNumCadeira.Name = "txtNumCadeira";
             this.txtNumCadeira.Size = new System.Drawing.Size(87, 20);
             this.txtNumCadeira.TabIndex = 11;
             // 
             // numCumputadores
             // 
-            this.numCumputadores.Location = new System.Drawing.Point(238, 36);
+            this.numCumputadores.Location = new System.Drawing.Point(135, 27);
             this.numCumputadores.Name = "numCumputadores";
             this.numCumputadores.Size = new System.Drawing.Size(87, 20);
             this.numCumputadores.TabIndex = 12;
@@ -149,11 +152,42 @@ namespace mapasala.Formularios
             this.dtgridSalas.Size = new System.Drawing.Size(776, 377);
             this.dtgridSalas.TabIndex = 13;
             // 
+            // btnLimpar
+            // 
+            this.btnLimpar.Location = new System.Drawing.Point(579, 21);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpar.TabIndex = 14;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Location = new System.Drawing.Point(660, 21);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluir.TabIndex = 15;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Location = new System.Drawing.Point(741, 21);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(75, 23);
+            this.btnEditar.TabIndex = 16;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            // 
             // frmSalas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnExcluir);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.dtgridSalas);
             this.Controls.Add(this.numCumputadores);
             this.Controls.Add(this.txtNumCadeira);
@@ -191,5 +225,8 @@ namespace mapasala.Formularios
         private System.Windows.Forms.NumericUpDown txtNumCadeira;
         private System.Windows.Forms.NumericUpDown numCumputadores;
         private System.Windows.Forms.DataGridView dtgridSalas;
+        private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.Button btnEditar;
     }
 }

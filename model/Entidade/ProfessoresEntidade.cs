@@ -13,5 +13,10 @@ namespace model.Entidade
         public string Apelido { get; set; }
         public bool Ativo { get; set; }
 
+        public object[] Linha()
+        {
+            return new object[] { Id, Nome, Sigla };
+        }
+
     }
 }

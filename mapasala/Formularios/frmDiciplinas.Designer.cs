@@ -38,6 +38,9 @@ namespace mapasala.Formularios
             this.label3 = new System.Windows.Forms.Label();
             this.chkAtivo = new System.Windows.Forms.CheckBox();
             this.dtgridDiciplinas = new System.Windows.Forms.DataGridView();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgridDiciplinas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,13 +119,47 @@ namespace mapasala.Formularios
             this.dtgridDiciplinas.Name = "dtgridDiciplinas";
             this.dtgridDiciplinas.Size = new System.Drawing.Size(750, 220);
             this.dtgridDiciplinas.TabIndex = 8;
+            this.dtgridDiciplinas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgridDiciplinas_CellClick);
             this.dtgridDiciplinas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgridDiciplinas_CellContentClick);
+            // 
+            // btnLimpar
+            // 
+            this.btnLimpar.Location = new System.Drawing.Point(515, 33);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpar.TabIndex = 9;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Location = new System.Drawing.Point(596, 32);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluir.TabIndex = 10;
+            this.btnExcluir.Text = "excluir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Location = new System.Drawing.Point(677, 32);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(75, 23);
+            this.btnEditar.TabIndex = 11;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // frmDiciplinas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnExcluir);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.dtgridDiciplinas);
             this.Controls.Add(this.chkAtivo);
             this.Controls.Add(this.label3);
@@ -152,5 +189,8 @@ namespace mapasala.Formularios
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox chkAtivo;
         private System.Windows.Forms.DataGridView dtgridDiciplinas;
+        private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.Button btnEditar;
     }
 }
