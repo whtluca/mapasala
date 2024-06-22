@@ -82,4 +82,10 @@ namespace mapasala.Formularios
             minhamae.Cells[1].Value = txtNomeCurso.Text;
             minhamae.Cells[2].Value = txtTurno.Text;
         }
+
+        private void txtNomeCurso_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
+}

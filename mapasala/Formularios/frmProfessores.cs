@@ -65,7 +65,7 @@ namespace mapasala.Formularios
             LinhaSelecionada = e.RowIndex;
             txtNome.Text = dtgridProfs.Rows[LinhaSelecionada].Cells[1].Value.ToString();
             txtApelido.Text = dtgridProfs.Rows[LinhaSelecionada].Cells[2].Value.ToString();
-            numId.Value = Convert.ToInt32(dtgridProfs.Rows[LinhaSelecionada].Cells[0].Value)
+            numId.Value = Convert.ToInt32(dtgridProfs.Rows[LinhaSelecionada].Cells[0].Value);
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
@@ -92,3 +92,4 @@ namespace mapasala.Formularios
             meupai.Cells[2].Value = txtApelido.Text;
         }
     }
+}
