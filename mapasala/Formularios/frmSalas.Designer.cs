@@ -109,6 +109,7 @@ namespace mapasala.Formularios
             this.chkLab.TabIndex = 8;
             this.chkLab.Text = "Laoboratório";
             this.chkLab.UseVisualStyleBackColor = true;
+            this.chkLab.CheckedChanged += new System.EventHandler(this.chkLab_CheckedChanged);
             // 
             // chkDisponivel
             // 

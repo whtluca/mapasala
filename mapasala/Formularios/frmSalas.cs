@@ -20,13 +20,13 @@ namespace mapasala.Formularios
             InitializeComponent();
             dados = new DataTable();
 
-            foreach (var atributos in typeof(CursoEntidades).GetProperties())
+            foreach (var atributos in typeof(SalasEntidade).GetProperties())
             {
                 dados.Columns.Add(atributos.Name);
             }
-            dados.Rows.Add(1, "Maker", "MAT", true);
-            dados.Rows.Add(2, "Português", "PORT", true);
-            dados.Rows.Add(3, "Física", "FIS", false);
+            dados.Rows.Add(1, "Maker", 20, 30, true, true);
+            dados.Rows.Add(2, "02", 20, 30, true, false);
+            dados.Rows.Add(3, "03", 20, 30, false, false);
 
             dtgridSalas.DataSource = dados;
         }
@@ -47,8 +47,10 @@ namespace mapasala.Formularios
             salas.NumComputadores = Convert.ToInt32(numCumputadores.Value);
             salas.Disponivel = chkDisponivel.Checked;
 
-            dados.Rows.Add(salas.Linha());
 
+
+
+            dados.Rows.Add(salas.Linha());
             LimparCampos();
         }
 
@@ -85,6 +87,13 @@ namespace mapasala.Formularios
             minhamae.Cells[1].Value = txtNomeSala.Text;
             minhamae.Cells[2].Value = numCumputadores.Value;
             minhamae.Cells[3].Value = numCadeira.Value;
+            minhamae.Cells[4].Value = chkLab.Checked;
+            minhamae.Cells[5].Value = chkDisponivel.Checked;
+        }
+
+        private void chkLab_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
