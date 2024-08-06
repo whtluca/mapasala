@@ -123,6 +123,7 @@ namespace mapasala.Formularios
             this.numId.Name = "numId";
             this.numId.Size = new System.Drawing.Size(120, 20);
             this.numId.TabIndex = 9;
+            this.numId.ValueChanged += new System.EventHandler(this.numId_ValueChanged);
             // 
             // btnLimpar
             // 

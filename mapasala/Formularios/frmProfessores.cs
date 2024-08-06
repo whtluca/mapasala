@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using mapasala.DAO;
 
 namespace mapasala.Formularios
 {
@@ -50,6 +51,9 @@ namespace mapasala.Formularios
             professor.Apelido = txtApelido.Text;
             professor.Ativo = chkAtivo.Checked;
 
+            ProfessorDAO dao = new ProfessorDAO();
+            dao.Inserir(professor);
+
             dados.Rows.Add(professor.Linha());
 
             LimparCampos();
@@ -90,6 +94,11 @@ namespace mapasala.Formularios
             meupai.Cells[0].Value = numId.Value;
             meupai.Cells[1].Value = txtNome.Text;
             meupai.Cells[2].Value = txtApelido.Text;
+        }
+
+        private void numId_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
